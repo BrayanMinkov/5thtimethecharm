@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1, y: 0}
   m_SizeDelta: {x: 0.3999939, y: -0.3999939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &17054647
@@ -254,7 +254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -25.76918}
+  m_AnchoredPosition: {x: 8, y: -25.76918}
   m_SizeDelta: {x: 249.9124, y: 65.4252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81678321
@@ -1735,7 +1735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Grisho's scene
-  delay: 40
+  delay: 35
   fadeObject: {fileID: 17054645}
   fadeTrigger: FadeIn
 --- !u!1 &1383678736
@@ -2066,7 +2066,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: -1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2120,7 +2120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5016625579338583486, guid: d7c1e71ab9636d74d8b002cd998d3dd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.29
+      value: -6.3
       objectReference: {fileID: 0}
     - target: {fileID: 5016625579338583486, guid: d7c1e71ab9636d74d8b002cd998d3dd6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2201,6 +2201,18 @@ PrefabInstance:
     - target: {fileID: 5016625580666149778, guid: d7c1e71ab9636d74d8b002cd998d3dd6, type: 3}
       propertyPath: m_LocalPosition.z
       value: -6.587
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240021051810252276, guid: d7c1e71ab9636d74d8b002cd998d3dd6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240021051810252276, guid: d7c1e71ab9636d74d8b002cd998d3dd6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240021051810252276, guid: d7c1e71ab9636d74d8b002cd998d3dd6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 6240021051810252276, guid: d7c1e71ab9636d74d8b002cd998d3dd6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2891,7 +2903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022f6517cafb1a34bb5d5032ad7a1a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 150
+  rotationSpeed: 700
 --- !u!23 &7414302827866630304
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3223,7 +3235,6 @@ GameObject:
   - component: {fileID: 3260616447094357931}
   - component: {fileID: 7762067044164003386}
   - component: {fileID: 8707273951273813052}
-  - component: {fileID: 8707273951273813053}
   - component: {fileID: 8707273951273813054}
   m_Layer: 0
   m_Name: SpinningHand
@@ -3245,23 +3256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: {x: 1.977141, y: 0, z: 1500}
-  accelerationTime: 1500
---- !u!114 &8707273951273813053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8707273951273813051}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22db33a9ea04af2419cad0f1ebc22071, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: {x: 0, y: 0, z: -1000}
-  objectToDelete: {fileID: 1756142301849288440}
-  accelerationTime: 10
-  decelerationTime: 100
+  accelerationTime: 100
 --- !u!54 &8707273951273813054
 Rigidbody:
   m_ObjectHideFlags: 0

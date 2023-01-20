@@ -4,7 +4,7 @@ using UnityEngine;
 public class Rotation : MonoBehaviour
 {
     public Vector3 rotationSpeed = new Vector3(0, 10, 0);
-    public float accelerationTime = 10.0f;
+    public float accelerationTime = 5.0f;
 
     private float startTime;
     private Vector3 currentRotationSpeed;
