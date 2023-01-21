@@ -2016,7 +2016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: Grisho's scene
-  delay: 35
+  delay: 50
   fadeObject: {fileID: 17054645}
   fadeTrigger: FadeIn
 --- !u!114 &1038186605
